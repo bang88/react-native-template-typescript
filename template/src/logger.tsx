@@ -18,24 +18,16 @@ const defaultConfig = {
   dateFormat: 'time' as const,
   printLevel: true,
   printDate: true,
-  enabled: true,
+  enabled: __DEV__,
 }
 
 const log = logger.createLogger(defaultConfig)
 
 export default {
   info: (...args: any) => {
-    if (__DEV__) {
-      log.info(...args)
-      // tslint:disable-next-line: no-console
-      console.log('\n')
-    }
+    log.info(...args)
   },
   warn: (...args: any) => {
-    if (__DEV__) {
-      log.warn(...args)
-      // tslint:disable-next-line: no-console
-      console.log('\n')
-    }
+    log.warn(...args)
   },
 }
