@@ -10,7 +10,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.e2e.js'],
+      files: ['*.e2e.js', 'scripts/jest.setup.js'],
       env: {
         'detox/detox': true,
         jest: true,
