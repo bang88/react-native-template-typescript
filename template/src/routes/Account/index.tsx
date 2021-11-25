@@ -5,10 +5,10 @@
  */
 
 import logger from '@app/logger'
+import { AppScreenRouteProp } from '@app/types'
 import { useRoute } from '@react-navigation/core'
 import React from 'react'
 import { Text, View } from 'react-native'
-import { AppScreenRouteProp } from '../types'
 import styles from './accountStyle'
 
 export interface AccountProps {}
