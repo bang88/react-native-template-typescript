@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "files.associations": {
+    ".env.prod": "dotenv",
+    ".env.dev": "dotenv",
+    ".env.prod.secret": "dotenv",
+    ".env.dev.secret": "dotenv"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
+}
