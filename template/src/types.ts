@@ -4,10 +4,14 @@ import { StackNavigationProp, StackScreenProps } from '@react-navigation/stack'
 
 export type RootStackParamList = {
   Home: undefined
+  HomeTab: undefined
   Profile: { userId: string }
   Account: {
     id: string
   }
+  Settings: undefined
+  Vacation: undefined
+  Foods: undefined
 }
 type NavKeys = keyof RootStackParamList
 
